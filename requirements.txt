@@ -1,0 +1,13 @@
+ipykernel
+holidays
+joblib
+missingno
+pandas
+plotly
+prophet
+scikit-learn
+skore
+statsmodels
+streamlit
+xgboost
+logging
