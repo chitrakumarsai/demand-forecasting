@@ -9,5 +9,6 @@ scikit-learn
 skore
 statsmodels
 streamlit
+streamlit-extras
 xgboost
 logging
