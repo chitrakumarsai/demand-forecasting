@@ -196,12 +196,12 @@ else:
 inference_obj = ModelInference(model)
 
 # loading test_data & plotting forecasting for test data
-test_data = get_data("data/processed/test_data.csv")
+test_data = get_data("/Users/chitrakumarsai/Desktop/Personal/projects/demand-forecasting/data/processed/test_data.csv")
 test_data_pred = inference_obj.test_data_prediction(test_data,model_name)
 
 
 test_pred_plot = visualizer.test_prediction_plot(
-    test_data, test_data_pred, "demand_in_MW"
+    test_data, test_data_pred, "PJMW_MW"
 )
 
 # test data Forecasting
