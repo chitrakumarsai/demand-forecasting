@@ -12,3 +12,6 @@ streamlit
 streamlit-extras
 xgboost
 logging
+matplotlib
+nbformat4.2.0     
+setuptools
