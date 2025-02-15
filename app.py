@@ -99,13 +99,13 @@ final_data = None
 with raw_data_col:
     with st.spinner("Loading Raw Data..!!!"):
         st.write("Raw Data")
-        raw_data = get_data("/Users/chitrakumarsai/Desktop/Personal/projects/demand-forecasting/data/raw_data/PJMW_hourly.csv")
+        raw_data = get_data("./data/raw_data/PJMW_hourly.csv")
         st.dataframe(raw_data)
 
 with final_data_col:
     with st.spinner("Loading Final Data...!!"):
         st.write("Final Data :")
-        final_data = get_data("/Users/chitrakumarsai/Desktop/Personal/projects/demand-forecasting/data/processed/final_data.csv")
+        final_data = get_data("./data/processed/final_data.csv")
         st.dataframe(final_data)
 
 
@@ -196,7 +196,7 @@ else:
 inference_obj = ModelInference(model)
 
 # loading test_data & plotting forecasting for test data
-test_data = get_data("/Users/chitrakumarsai/Desktop/Personal/projects/demand-forecasting/data/processed/test_data.csv")
+test_data = get_data("./data/processed/test_data.csv")
 test_data_pred = inference_obj.test_data_prediction(test_data,model_name)
 
 

@@ -19,7 +19,7 @@ class SeasonalDecomposer:
         """
         self.logger.info("Decomposing time series")
         try:
-            series = df[["demand_in_MW"]]
+            series = df[["PJMW_MW"]]
             decomposed = seasonal_decompose(series, model=model, period=self.frequency)
             return decomposed
         except Exception as e:
